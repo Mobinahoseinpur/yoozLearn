@@ -23,5 +23,6 @@
     flex-shrink: 0;
 }
 .item1{
+    /* flex-grow: 1; */
     flex-shrink: 2;
 }
