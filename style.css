@@ -1,20 +1,27 @@
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 .flex-container{
     width: 50rem;
-    height: 20rem;
-    background-color: darkgray;
-    margin: 2rem auto;
+    height: 35rem;
+    background: darkgray;
+    margin: 0 auto;
     display: flex;
-    /* flex-direction: row; */
-    align-items: center;
+    flex-direction:row ;
+    /* flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around; */
 }
 .flex-item{
-    height: 2rem;
-    width: 5rem;
-    background-color: hotpink;
-    border: solid 1px black;
+    width: 7rem;
+    height: 7rem;
+    background: hotpink;
+    border: 1px solid black;
     text-align: center;
+    line-height: 6rem;
+    flex-shrink: 0;
+}
+.item1{
+    flex-shrink: 2;
 }
