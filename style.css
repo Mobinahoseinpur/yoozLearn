@@ -1,152 +1,28 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'sans-serif';
 }
-section{
-    width: 100%;
-    height: 600px;
-    position: relative;
-}
-
-.navbar{
-    width: 100%;
-    height: 70px;
-    z-index: 99;
-    padding: 10px 3% ;
-}
-.navbar > ul {float: right;}
-.navbar > div {float: left;}
-.logo{
-    font-size: 32px;
-    font-weight: 900;
-    color: #7240d7;
-}
-.menu li{
-    display: inline;
-    list-style: none;
-    margin: 0 10px;
-    font-size: 24px;
-}
-.menu li a{
-    color: #0f0f0f;
-    text-decoration: none;
-}
-.menu li:hover a{
-    transition: linear 0.3s;
-    color: #7240d7;
-    border-bottom: #7240d7 2px solid;
-}
-.container{
-    /* background: yellow; */
-    width: 80%;
+.flex-container{
+    width: 50rem;
+    height: 35rem;
+    background: darkgray;
     margin: 0 auto;
+    display: flex;
+    flex-direction:row ;
+    /* flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around; */
 }
-.textContainer{
-   width:50% ;
-   float: left;
-   padding: 20px 0 0 0;
+.flex-item{
+    width: 7rem;
+    height: 7rem;
+    background: hotpink;
+    border: 1px solid black;
+    text-align: center;
+    line-height: 6rem;
+    flex-shrink: 0;
 }
-.textContainer h2{
-    font-size: 64px;
-    font-weight: 900;
-}
-.textContainer h2::first-line{
-    color: #7240d7;
-    text-shadow: 0 5px 8px rgba(0, 0, 0,0.4);
-}
-.textContainer p{
-    font-size: 24px;
-    font-weight: 400;
-    margin: 15px 0 30px 0;
-}
-.textContainer .btn{
-    text-decoration: none;
-    color: #ffff;
-    background: #7240d7;
-    padding: 15px;
-    border-radius: 10px;
-    transition:background ease-in 0.3s;
-}
-
-
-/* ------------download button-------------- */
-.button {
-    position: relative;
-    overflow: hidden;
-    border-color: #7240d7;
-    /* height: 3rem; */
-    height: 50px;
-    padding: 15px 20px;
-    border-radius: 10px;
-    background: #fff;
-    background-size: 400%;
-    color: #0f0f0f;
-  }
-  
-  .button-content {
-    position: relative;
-    z-index: 1;
-  }
-  
-  .button::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: scaleX(0);
-    transform-origin: 0 100%;
-    width: 100%;
-    height: inherit;
-    border-radius: inherit;
-    background: linear-gradient(
-      82.3deg,
-      rgba(150, 93, 233, 1) 10.8%,
-      rgba(99, 88, 238, 1) 94.3%
-    );
-    transition: all 0.475s;
-  }
-  .button:hover::before {
-    transform: scaleX(2);
-  }
-
-
-.imageContainer{
-    width:50% ;
-    float: right;    
-}
-.imageBox{
-    margin: 0 auto;
-    height: 100%;
-    position: relative;
-    z-index: 1;
-    /* background-color: aqua; */
-}
-
-/* -------------anim------------ */
-.anm{
-    position: absolute;
-    top:30%;
-    left: 57%;
-    height: 400px;
-    width: 400px;
-    background: #7240d7;
-    /* transform: translate(-50%,-50%); */
-    animation: moveanm 3s linear infinite;
-}
-@keyframes moveanm{
-    0%,100%{
-        border-radius: 45% 55% 35% 65% / 75% 25% 60% 40%;
-    }
-    25%{
-        border-radius: 75% 40% 65% 50% / 30% 50% 40% 70%;
-    }
-    50%{
-        border-radius: 75% 40% 65% 30% / 30% 50% 40% 70%;
-    }
-    75%{
-        border-radius: 30% 70% 65% 75% / 50% 30% 40% 70%;
-    }
-
+.item1{
+    /* flex-grow: 1; */
+    flex-shrink: 2;
 }
