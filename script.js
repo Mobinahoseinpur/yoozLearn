@@ -1,53 +1,46 @@
-// document.write('<h2>salam</h2>')
+// !-----------------------------register-----------------------------------
+var userName = prompt('enter your username : ')
+var password = prompt('enter your pass : ')
+if(userName.length < 3 || password.length < 8){
+    alert('نام کاربری و یا رمز عبور اشتباه است ')
+}else{
+    alert("welcome to yooz")
+}
+// !----------------------login---------------------------------------------
+var userName= prompt('enter your username : ')
+if(userName.toLowerCase() == "pouria"){
+    alert("success")
+}else{
+    alert("please try again")
+}
+// !------------------------------------------------------------------------
+var text = "to ke pishie mani o miawoooo"
 
-// let num=10;
+console.log(text.slice(-8));
+console.log(text.substring(-6));
 
-// if(num==10){
-// console.log('true')
-// }else{
-// console.log('false')
-// }
-
-// --------------------------------------------------------------
-// let num=7;
-// if(num%6==0){
-//     document.write('<h3>even number</h3>')
-// }else{
-//     document.write('<h3>odd number</h3>')
-// }
-// -------------------------------------------------------------------
-// let num=0
-// if(num>0){
-//     document.write('<h3>positive number</h3>')
-//     if(num%2==0){
-//         document.write('<h4>even number</h4>')
-//     }else{
-//         document.write('<h4>odd number</h4>')
-//     }
-// }else if(num<0){
-//     document.write('<h3>negativ number</h3>')
-// }else{
-//     document.write('equal 0')
-// }
-// ---------------------------------
-// let num=4;
-// if(num>0 && num%2==0)
-//     document.write('<h3>positive and even</h3>')
-// ---------------------------------------------
-let day="sunday"
-
-switch (day) {
-    case "sunday":
-        document.write('<h1>الپرازولام</h1>')
-        break;
-    case "monday":
-        document.write('<h1>اسنترا</h1>')
-        break;
-    case "tuesday":
-        document.write('<h1>استامینوفن</h1>')
-        break;
-
-    default:
-        document.write('دیتا نامعتبر')
-        break;
+// !------------------------math--------------------------------------------
+console.log(Math.PI);
+console.log(Math.pow(2,3));//2**3
+console.log(Math.sqrt(36));
+console.log(Math.abs(-30));
+console.log(Math.min(25,30,33,50,5,4,85));
+console.log(Math.max(25,30,33,50,5,4,85));
+console.log(Math.floor(15.9))
+console.log(Math.round(15.5))
+console.log(Math.ceil(15.1));
+console.log(Math.random());
+console.log(Math.random()*10);
+console.log(Math.floor(Math.random()*10));
+console.log(Math.floor(Math.random()*100000));
+// !-----------------------------register-----------------------------------
+var captchaCode = Math.floor(Math.random()*100000);
+document.write(captchaCode)
+var userName = prompt('enter your username : ')
+var password = prompt('enter your pass : ')
+var capcha = prompt(captchaCode," ")
+if(userName.length < 3 || password.length < 8 || capcha!= captchaCode){
+    alert('نام کاربری و یا رمز عبور اشتباه است ')
+}else{
+    alert("welcome to yooz")
 }
