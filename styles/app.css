@@ -13,7 +13,7 @@ html {
 }
 body {
   font-size: 1.6rem;
-  font: "Roboto";
+  font-family: "Roboto";
 }
 a {
   text-decoration: none;
